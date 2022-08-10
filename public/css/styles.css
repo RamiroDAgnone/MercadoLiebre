@@ -1,0 +1,17 @@
+body{
+    background-color: #EAC926;
+    font-family: "Roboto";
+    
+}
+.precio{
+    font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+}
+.desc{
+    font-size: 16px;
+}
+p{
+    font-size: 12px;
+}
