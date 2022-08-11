@@ -2,36 +2,60 @@ body{
     font-family: "Roboto";
     background-color: #ebebeb; 
 }
+
 header{
     background-color: #EAC926;    
 }
+
 .logo{
     width: 200px;
 }
-.banner{
+
+main{
+    background-color: white;
+    text-align: center;
+}
+
+#textocuotas{
+    text-align: center;
+}
+
+#banner{
     width: 100%;
 }
+
 h3{
     font-size: 24px;
 }
+
 .precio{
     font-size: 18px;
 }
+
 .descuentos{
     font-size: 16px;
 }
+
 .desc{
     font-size: 16px;
 }
+
 p{
     font-size: 12px;
 }
+
 footer{
     background-color:  white;
     text-align: center;
     line-height: 14px;
 }
+
 .iconfooter{
-    font-size: 35px;
+    font-size: 2em;
     color:blue;
+    margin-bottom: 10px;
+}
+
+#copyright{
+    text-align: left;
 }
