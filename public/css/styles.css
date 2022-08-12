@@ -3,6 +3,10 @@ body{
     background-color: #ebebeb; 
 }
 
+main{
+    margin: 20px;
+}
+
 header{
     background-color: #EAC926;
 }
@@ -24,17 +28,21 @@ header{
     width: 200px;
     margin-left: 10px;
 }
+
 #bordeSearch{
     border: 1px solid black;
     width: 20px;
     margin-left: 10px;
+    text-align: center;
 }
+
 .barra{
     padding: 4 4 4 4px;
     background-color: white;
 }
+
 .burger-menu{
-    background-color: blue;
+    background-color: #1259c3;
     color:white;
     text-align: center;
     width: 25px;
@@ -58,6 +66,7 @@ main{
 
 h3{
     font-size: 24px;
+    margin-top: 5px;
 }
 
 .precio{
@@ -84,7 +93,7 @@ footer{
 
 .iconfooter{
     font-size: 2em;
-    color:blue;
+    color:#1259c3;
     margin-bottom: 10px;
 }
 
