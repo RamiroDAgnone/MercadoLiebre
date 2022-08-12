@@ -4,11 +4,42 @@ body{
 }
 
 header{
-    background-color: #EAC926;    
+    background-color: #EAC926;
+}
+
+#navbar{
+    margin-left: 10px;
+}
+
+#loginbar{
+    margin-left: 10px;
 }
 
 .logo{
     width: 200px;
+}
+
+#bordeBarra{
+    border: 1px solid black;
+    width: 200px;
+    margin-left: 10px;
+}
+#bordeSearch{
+    border: 1px solid black;
+    width: 20px;
+    margin-left: 10px;
+}
+.barra{
+    padding: 4 4 4 4px;
+    background-color: white;
+}
+.burger-menu{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    width: 25px;
+    height: 20px;
+    margin-left: 50%;
 }
 
 main{
@@ -22,6 +53,7 @@ main{
 
 #banner{
     width: 100%;
+    margin-top: 10px;
 }
 
 h3{
