@@ -1,10 +1,14 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: "Roboto";
     background-color: #ebebeb; 
 }
 
-main{
-    margin: 20px;
+.mainhome{
+    text-align: center;
+    width: 90vw;
 }
 
 header{
@@ -13,10 +17,12 @@ header{
 
 #navbar{
     margin-left: 10px;
+    display: none;
 }
 
 #loginbar{
     margin-left: 10px;
+    display: none;
 }
 
 .logo{
@@ -50,11 +56,6 @@ header{
     margin-left: 50%;
 }
 
-main{
-    background-color: white;
-    text-align: center;
-}
-
 #textocuotas{
     text-align: center;
 }
@@ -62,6 +63,25 @@ main{
 #banner{
     width: 100%;
     margin-top: 10px;
+}
+
+.foto-producto{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80vw;
+}
+
+.productoshome{
+    text-align: left;
+    margin: 10px;
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.envio{
+    color: #39b54a;
 }
 
 h3{
@@ -75,10 +95,12 @@ h3{
 
 .descuentos{
     font-size: 16px;
+    color: #39b54a;
 }
 
-.desc{
+.descripcion{
     font-size: 16px;
+    display: none;
 }
 
 p{
@@ -99,4 +121,42 @@ footer{
 
 #copyright{
     text-align: left;
+}
+
+@media (min-width: 361px){
+    .descripcion{
+        display:contents;
+    }
+    .productoshome{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    #navbar{
+        margin-left: 10px;
+        display: contents;
+    }
+    
+    #loginbar{
+        margin-left: 10px;
+        display: contents;
+    }
+}
+
+@media (min-width: 769px){
+    .descripcion{
+        display:contents;
+    }
+
+    .productoshome{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    #navbar{
+        margin-left: 10px;
+        display: contents;
+    }
+    
+    #loginbar{
+        margin-left: 10px;
+        display: contents;
+    }
 }
