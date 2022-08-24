@@ -2,8 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
+
 body{
     font-family: "Roboto";
     background-color: #ebebeb; 
@@ -11,6 +11,7 @@ body{
 
 .navbar{
     display: none;
+    
 }
 
 .loginbar{
@@ -31,14 +32,11 @@ body{
 
 header{
     background-color: #EAC926;
-
 }
 
 .logo{
     width: 200px;
 }
-
-
 
 .burger-menu{
     background-color: #1259c3;
@@ -58,7 +56,7 @@ header{
     margin-top: 10px;
 }
 
-h3{
+.mainhome h3{
     font-size: 24px;
     margin-top: 5px;
     margin-left: 2vw;
@@ -113,13 +111,14 @@ h3{
     display: none;
 }
 
-p{
+.mainhome p{
     font-size: 12px;
 }
 
 footer{
     background-color:  white;
     text-align: center;
+    margin: 10px;
 }
 
 .iconfooter{
@@ -130,6 +129,7 @@ footer{
 }
 
 #copyright{
+    margin-top: 15px;
     text-align: left;
 }
 
@@ -148,7 +148,7 @@ footer{
     box-sizing: border-box;
     border: 1px solid #EAC926;
     width: 300px;
-
+    padding: 10px;
 }
 
 .formulario_registro h3{
@@ -165,11 +165,6 @@ footer{
     justify-content: center;
     margin: 20px;
     padding: 5px;
-}
-
-.intereses{
-    box-sizing: border-box;
-    
 }
 
 .perfil_usuario{
@@ -192,6 +187,7 @@ footer{
     box-sizing: border-box;
     border: 1px solid #EAC926;
     width: 300px;
+    padding: 10px;
 }
 
 .formulario_login h3{
@@ -238,13 +234,24 @@ footer{
 
     .navegacion{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-right: 10px;
     }
+
     .loginbar{
-        display: contents;
+        display: flex;
     }
+
+    .loginbar a{
+        margin-left: 30px;
+    }
+
     .navbar{
-        display: contents;
+        display: flex;
+    }
+
+    .navbar a{
+        margin-left: 30px;
     }
     .descripcion{
         display:contents;
