@@ -9,6 +9,14 @@ body{
     background-color: #ebebeb; 
 }
 
+.navbar{
+    display: none;
+}
+
+.loginbar{
+    display: none;
+}
+
 #ultimavisita{
     display: flex;
     flex-wrap: wrap;
@@ -125,6 +133,84 @@ footer{
     text-align: left;
 }
 
+.main_formulario_registro{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formulario_registro{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: #FFF;
+    font-size: 16px;   
+    box-sizing: border-box;
+    border: 1px solid #EAC926;
+    width: 300px;
+
+}
+
+.formulario_registro h3{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_registro h4{
+    display: flex;
+    justify-content: center;
+}
+.formulario_registro p{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+.intereses{
+    box-sizing: border-box;
+    
+}
+
+.perfil_usuario{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main_login{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    background-color: #FFF;
+    font-size: 16px;   
+    box-sizing: border-box;
+    border: 1px solid #EAC926;
+    width: 300px;
+}
+
+.formulario_login h3{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_login p{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+.login_button{
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 361px){
     
     .descripcion{
@@ -134,11 +220,11 @@ footer{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    #navbar{
+    .navegacion{
         display: none;
+
     }
-    
-    #loginbar{
+    #navegacion{
         display: none;
     }
 }
@@ -150,19 +236,16 @@ footer{
         align-items: center;
     }
 
-    #navegacion{
+    .navegacion{
         display: flex;
         justify-content: space-around;
     }
-
-    #navbar{
+    .loginbar{
         display: contents;
     }
-    
-    #loginbar{
+    .navbar{
         display: contents;
     }
-    
     .descripcion{
         display:contents;
     }

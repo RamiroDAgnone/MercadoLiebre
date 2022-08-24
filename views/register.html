@@ -5,81 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crea tu Cuenta</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <form action="/" method="get">
-        <h3>¡Registrate!</h3>
-    
-            <p>Nombre y Apellido*
-                <input type="text" placeholder="Ej: Juancho Perez" required>
-            </p>
+    <header>
+        <section id="barraheader">
+            <a href="/"><img class="logo "src="/images/logo-mercado-liebre.svg" alt="Logo"></a>
+            <form action="/" method="get">
+                <input type="text" placeholder="Buscar productos, Marcas">
+            </form>
+            <p id="textocuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </section>
 
-            <p>Nombre de usuario*
-                <input type="text" placeholder="Ej: Juancho123" required>
-            </p>
+        <section class="navegacion">
+            <div class="navbar">
+                <a href="">Ofertas</a>
+                <a href="">Tiendas Oficiales</a>
+                <a href="">Vender</a>
+                <a href="">Ayuda</a>
+            </div>
+            
+            <div class="loginbar">
+                <a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a>
+                <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                <a href="">Mis compras <i class="fas fa-shopping-basket"></i></a>
+            </div>
 
-            <p>E-Mail*
-                <input type="email" placeholder="Ej: juancho.perez@email.com" required>
-            </p>
+        </section>
 
-            <p>Contraseña*
-                <input type="password" required>
-            </p>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
 
-            <p>Vuelve a ingresar la contraseña*
-                <input type="password" required>
-            </p>
+    </header>
+<main class="main_formulario_registro">
+    <section class="formulario_registro">
+        <form action="/" method="get">
+            <h3>¡Registrate!</h3>
+        
+                <p>
+                    <input type="text" placeholder="Nombre y Apellido" required> *
+                </p>
 
-            <p> Fecha de nacimiento* 
-                <input type="date" required>
-            </p>
+                <p>
+                    <input type="text" placeholder="Nombre de usuario" required> *
+                </p>
 
-            <p>Domicilio
-                <input type="text" placeholder="Ej: Corrientes 1800">
-            </p>
+                <p>
+                    <input type="email" placeholder="E-Mail" required> *
+                </p>
 
-        <h3>Perfil del usuario</h3>
+                <p>
+                    <input type="password" required placeholder="Contraseña"> *
+                </p>
 
-            <p>
-                <input type="radio" value="comprador" name="perfil" id="comprador">
-                    <label for="comprador">Comprador</label>
-            </p>
-            <p>
-                <input type="radio" value="vendedor" name="perfil" id="vendedor">
-                    <label for="vendedor">Vendedor</label>
-            </p>
+                <p>
+                    <input type="password" required placeholder="Reingrese la contraseña"> *
+                </p>
 
-            <p>Foto de usuario
-                <input type="file" name="avatar" accept=".jpg, .png">
-            </p>
+                <h4>Fecha de nacimiento</h4>
+                <p> 
+                    <input type="date" required> *
+                </p>
 
-        <h3>Intereses</h3>
-            <p>
-                <input type="checkbox" value="electro" name="intereses" id="electro">
-                    <label for="electro">Electro</label>
-            </p>
-            <p>
-                <input type="checkbox" value="moda" name="intereses" id="moda">
-                    <label for="moda">Moda</label>
-            </p>
-            <p>
-                <input type="checkbox" value="hogar" name="intereses" id="hogar">
-                    <label for="hogar">Hogar</label>
-            </p>
-            <p>
-                <input type="checkbox" value="jugueteria" name="intereses" id="jugueteria">
-                    <label for="jugueteria">Jugueteria</label>
-            </p>
-            <p>
-                <input type="checkbox" value="sana" name="intereses" id="sana">
-                    <label for="sana">Vida Sana</label>
-            </p>
+                <p>
+                    <input type="text" placeholder="Domicilio">
+                </p>
 
-            <input type="submit">
-            <input type="reset">
-    </form>
+            <h3>Perfil del usuario *</h3>
+                <p class="perfil_usuario">
+                    <input type="radio" value="comprador" name="perfil" id="comprador" required>
+                        <label for="comprador">Comprador</label>
 
+                    <input type="radio" value="vendedor" name="perfil" id="vendedor" required>
+                        <label for="vendedor">Vendedor</label>
+                </p>
+                <h4>Foto de usuario</h4>
+                <p>
+                    <input type="file" name="avatar" accept=".jpg, .png">
+                </p>
+
+            <h3>Intereses</h3>
+                <section class="intereses">
+                    <p>
+                        <input type="checkbox" value="electro" name="intereses" id="electro">
+                            <label for="electro">Electro</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="moda" name="intereses" id="moda">
+                            <label for="moda">Moda</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="hogar" name="intereses" id="hogar">
+                            <label for="hogar">Hogar</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="jugueteria" name="intereses" id="jugueteria">
+                            <label for="jugueteria">Jugueteria</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="sana" name="intereses" id="sana">
+                            <label for="sana">Vida Sana</label>
+                    </p>
+                </section>
+
+                <p>Items con * son obligatorios</p>
+                
+                    <p class="registro_botones">
+                        <input type="submit">
+                        <input type="reset">
+                    </p>
+                
+        </form>
+    </section>
+</main>
 
 </body>
 </html>
