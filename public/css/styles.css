@@ -9,13 +9,36 @@ body{
     background-color: #ebebeb; 
 }
 
+.barraheader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.barraheader input{
+    width: 20vw;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
 .navbar{
-    display: none;
-    
+    display: flex;
 }
 
 .loginbar{
-    display: none;
+    display: flex;
+}
+
+.navbar a{
+    margin-left: 30px;
+}
+
+.loginbar a{
+    margin-left: 30px;
 }
 
 #ultimavisita{
@@ -32,6 +55,7 @@ body{
 
 header{
     background-color: #EAC926;
+    padding-bottom: 10px;
 }
 
 .logo{
@@ -39,12 +63,13 @@ header{
 }
 
 .burger-menu{
+    display: none;
     background-color: #1259c3;
     color:white;
     text-align: center;
     width: 25px;
     height: 20px;
-    margin-left: 50%;
+    margin: 10px 0 0 50%;
 }
 
 #textocuotas{
@@ -77,6 +102,8 @@ header{
     background-color: #FFF;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
 }
 
 .envio{
@@ -108,7 +135,6 @@ header{
 
 .descripcion{
     font-size: 16px;
-    display: none;
 }
 
 .mainhome p{
@@ -136,33 +162,36 @@ footer{
 .main_formulario_registro{
     display: flex;
     justify-content: center;
-    
 }
 
 .formulario_registro{
-    display: flex;
     justify-content: center;
     margin: 20px;
     background-color: #FFF;
-    font-size: 16px;   
-    box-sizing: border-box;
+    font-size: 16px;
     border: 1px solid #EAC926;
-    width: 300px;
     padding: 10px;
 }
 
 .formulario_registro h3{
     display: flex;
     justify-content: center;
+    font-size: 2em;
 }
 
 .formulario_registro h4{
     display: flex;
     justify-content: center;
 }
+
+.inputs input{
+    width: 100%;
+}
+
 .formulario_registro p{
     display: flex;
     justify-content: center;
+    font-size: 16px;
     margin: 20px;
     padding: 5px;
 }
@@ -175,6 +204,10 @@ footer{
 .main_login{
     display: flex;
     justify-content: center;
+}
+
+.main_login input{
+    width: 100%;
 }
 
 .formulario_login{
@@ -193,6 +226,7 @@ footer{
 .formulario_login h3{
     display: flex;
     justify-content: center;
+    font-size: 2em;
 }
 
 .formulario_login p{
@@ -207,59 +241,51 @@ footer{
     justify-content: center;
 }
 
-@media (min-width: 361px){
+
+@media (max-width: 361px){
     
     .descripcion{
         display: none;
     }
+
     .productoshome{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: none;
     }
 
     .navegacion{
-        display: none;
-
-    }
-    #navegacion{
         display: none;
     }
 }
 
-@media (min-width: 769px){
-    #barraheader{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .navegacion{
-        display: flex;
-        justify-content: space-between;
-        margin-right: 10px;
-    }
+@media (max-width: 769px){
 
     .loginbar{
-        display: flex;
-    }
-
-    .loginbar a{
-        margin-left: 30px;
+        display: none;
     }
 
     .navbar{
-        display: flex;
+        display: none;
     }
 
-    .navbar a{
-        margin-left: 30px;
+    .burger-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .descripcion{
-        display:contents;
+        display:none;
     }
 
     .productoshome{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: none;
     }
 
-
+    .barraheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .barraheader input{
+        width: 50vw;
+    }
 }

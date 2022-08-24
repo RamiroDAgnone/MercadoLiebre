@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <section id="barraheader">
+        <section class="barraheader">
             <a href="/"><img class="logo "src="/images/logo-mercado-liebre.svg" alt="Logo"></a>
             <form action="/" method="get">
                 <input type="text" placeholder="Buscar productos, Marcas">
@@ -23,16 +23,16 @@
 
         <section class="navegacion">
             <div class="navbar">
-                <a href="">Ofertas</a>
-                <a href="">Tiendas Oficiales</a>
-                <a href="">Vender</a>
-                <a href="">Ayuda</a>
+                <a href="/">Ofertas</a>
+                <a href="/">Tiendas Oficiales</a>
+                <a href="/">Vender</a>
+                <a href="/">Ayuda</a>
             </div>
             
             <div class="loginbar">
                 <a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a>
                 <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-                <a href="">Mis compras <i class="fas fa-shopping-basket"></i></a>
+                <a href="/">Mis compras <i class="fas fa-shopping-basket"></i></a>
             </div>
 
         </section>
@@ -46,50 +46,50 @@
     <section class="formulario_registro">
         <form action="/" method="get">
             <h3>¡Registrate!</h3>
-        
-                <p>
-                    <input type="text" placeholder="Nombre y Apellido" required> *
-                </p>
+                <section class="inputs">
+                    <p>
+                        <input type="text" placeholder="Nombre y Apellido" required> *
+                    </p>
 
-                <p>
-                    <input type="text" placeholder="Nombre de usuario" required> *
-                </p>
+                    <p>
+                        <input type="text" placeholder="Nombre de usuario" required> *
+                    </p>
 
-                <p>
-                    <input type="email" placeholder="E-Mail" required> *
-                </p>
+                    <p>
+                        <input type="email" placeholder="E-Mail" required> *
+                    </p>
 
-                <p>
-                    <input type="password" required placeholder="Contraseña"> *
-                </p>
+                    <p>
+                        <input type="password" required placeholder="Contraseña"> *
+                    </p>
 
-                <p>
-                    <input type="password" required placeholder="Reingrese la contraseña"> *
-                </p>
+                    <p>
+                        <input type="password" required placeholder="Reingrese la contraseña"> *
+                    </p>
 
-                <h4>Fecha de nacimiento</h4>
-                <p> 
-                    <input type="date" required> *
-                </p>
+                    <h4>Fecha de nacimiento</h4>
+                    <p> 
+                        <input type="date" required> *
+                    </p>
 
-                <p>
-                    <input type="text" placeholder="Domicilio">
-                </p>
+                    <p>
+                        <input type="text" placeholder="Domicilio">
+                    </p>
 
-            <h3>Perfil del usuario *</h3>
-                <p class="perfil_usuario">
-                    <input type="radio" value="comprador" name="perfil" id="comprador" required>
-                        <label for="comprador">Comprador</label>
+            <h4>Perfil del usuario *</h4>
+                    <p class="perfil_usuario">
+                        <input type="radio" value="comprador" name="perfil" id="comprador" required>
+                            <label for="comprador">Comprador</label>
 
-                    <input type="radio" value="vendedor" name="perfil" id="vendedor" required>
-                        <label for="vendedor">Vendedor</label>
-                </p>
-                <h4>Foto de usuario</h4>
-                <p>
-                    <input type="file" name="avatar" accept=".jpg, .png">
-                </p>
-
-            <h3>Intereses</h3>
+                        <input type="radio" value="vendedor" name="perfil" id="vendedor" required>
+                            <label for="vendedor">Vendedor</label>
+                    </p>
+                    <h4>Foto de usuario</h4>
+                    <p>
+                        <input type="file" name="avatar" accept=".jpg, .png">
+                    </p>
+                </section>
+            <h4>Intereses</h4>
                 <section class="intereses">
                     <p>
                         <input type="checkbox" value="electro" name="intereses" id="electro">
@@ -114,12 +114,12 @@
                 </section>
 
                 <p>Items con * son obligatorios</p>
-                
+                <article class="inputs">
                     <p class="registro_botones">
                         <input type="submit">
                         <input type="reset">
                     </p>
-                
+                </article>
         </form>
     </section>
 </main>
