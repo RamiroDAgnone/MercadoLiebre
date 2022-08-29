@@ -9,17 +9,34 @@ body{
     background-color: #ebebeb; 
 }
 
+/* Header */
+
 .barraheader{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 7px;
 }
 
 .barraheader input{
-    width: 20vw;
+    width: 25vw;
+    border-radius: 5px;
+    border: 1px #000 solid;
+    background-color: #fff;
+    padding: 7px;
 }
 
-.navegacion{
+.barrasearchicono{
+    width: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #000 solid;
+    background-color: #fff;
+    padding: 7px;
+}
+
+nav{
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
@@ -40,6 +57,8 @@ body{
 .loginbar a{
     margin-left: 30px;
 }
+
+/* Main Home */
 
 #ultimavisita{
     display: flex;
@@ -154,6 +173,8 @@ header{
     font-size: 12px;
 }
 
+/* Main Registro*/
+
 .main_formulario_registro{
     display: flex;
     justify-content: center;
@@ -225,6 +246,8 @@ header{
     right: 40px;
 }
 
+/* Main Login */
+
 .main_login{
     display: flex;
     justify-content: center;
@@ -258,6 +281,7 @@ header{
     border: 1px solid #EAC926;
     width: 300px;
     padding: 10px;
+    text-align: center;
 }
 
 .formulario_login h3{
@@ -273,10 +297,17 @@ header{
     padding: 5px;
 }
 
+.formulario_login a{
+    display: flex;
+    justify-content: center;
+}
+
 .login_button{
     display: flex;
     justify-content: center;
 }
+
+/* Footer */
 
 footer{
     background-color:  #fff;
@@ -320,7 +351,7 @@ footer h6{
         box-shadow: none;
     }
 
-    .navegacion{
+    nav{
         display: none;
     }
 }
