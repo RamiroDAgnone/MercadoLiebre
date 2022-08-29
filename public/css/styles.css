@@ -202,7 +202,11 @@ header{
 
 .intereses{
     display: flex;
+}
 
+.intereses p label{
+    display: flex;
+    margin-left: 6px;
 }
 
 .inputs input{
