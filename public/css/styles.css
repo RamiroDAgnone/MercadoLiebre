@@ -389,6 +389,14 @@ footer h6{
         align-items: center;
     }
 
+    .hometitulos{
+        display: block;
+    }
+
+    .hometitulos a{
+        margin-left: 35px;
+    }
+
     .descripcion{
         display:none;
     }
