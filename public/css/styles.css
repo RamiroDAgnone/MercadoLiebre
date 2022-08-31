@@ -11,6 +11,15 @@ body{
 
 /* Header */
 
+header{
+    background-color: #EAC926;
+    padding-bottom: 10px;
+}
+
+.logo{
+    width: 200px;
+}
+
 .barraheader{
     display: flex;
     flex-direction: row;
@@ -52,10 +61,25 @@ nav{
 
 .navbar a{
     margin-left: 30px;
+    text-decoration: none;
+    color: #333333;
 }
 
 .loginbar a{
     margin-left: 30px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.burger-menu{
+    display: none;
+    background-color: #1259c3;
+    color:white;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin: 10px 0 0 50%;
+    border-radius: 10%;
 }
 
 /* Main Home */
@@ -70,25 +94,6 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-header{
-    background-color: #EAC926;
-    padding-bottom: 10px;
-}
-
-.logo{
-    width: 200px;
-}
-
-.burger-menu{
-    display: none;
-    background-color: #1259c3;
-    color:white;
-    text-align: center;
-    width: 25px;
-    height: 20px;
-    margin: 10px 0 0 50%;
 }
 
 #textocuotas{
@@ -119,6 +124,11 @@ header{
     margin-left: 20px;
     color: #3483fa;
     text-decoration: none;
+    font-size: 17px;
+}
+
+.hometitulos a:hover{
+    color: #1259c3;
 }
 
 .foto-producto{
@@ -138,7 +148,7 @@ header{
     display: flex;
     flex-flow: column wrap;
     text-align: left;
-    margin: 10px;
+    margin: 10px 10px 30px 10px;
     background-color: #FFF;
     border-top: 1px solid #ebebeb;
     padding: 15px;
@@ -222,6 +232,11 @@ header{
     margin-left: 6px;
 }
 
+.perfil_usuario{
+    position: relative;
+    right: 40px;
+}
+
 .inputs input{
     width: 100%;
     border-radius: 5px;
@@ -238,6 +253,7 @@ header{
     background-color: #1259c3;
     padding: 7px;
     margin: 10px;
+    transition: all 200ms;
 }
 
 .input_botones .borrar{
@@ -248,6 +264,15 @@ header{
     background-color: #AA0044;
     padding: 7px;
     margin: 10px;
+    transition: all 200ms;
+}
+
+.enviar:hover {
+    transform: scale(1.07);
+}
+
+.borrar:hover {
+    transform: scale(1.07);
 }
 
 .formulario_registro p{
@@ -256,11 +281,6 @@ header{
     font-size: 16px;
     margin: 20px;
     padding: 5px;
-}
-
-.perfil_usuario{
-    position: relative;
-    right: 40px;
 }
 
 /* Main Login */
@@ -285,6 +305,7 @@ header{
     background-color: #1259c3;
     padding: 7px;
     margin: 10px;
+    transition: all 200ms;
 }
 
 .formulario_login{
@@ -334,7 +355,6 @@ footer .footertextoiconos{
     display: flex;
     text-align: center;
     margin: 10px;
-    padding-top: 10px;
 }
 
 footer h6{
@@ -359,21 +379,10 @@ footer h6{
 }
 
 @media (max-width: 361px){
-    
-    .descripcion{
-        display: none;
-    }
-
-    .productoshome{
-        box-shadow: none;
-    }
 
     nav{
         display: none;
     }
-}
-
-@media (max-width: 769px){
 
     .loginbar{
         display: none;
@@ -389,8 +398,48 @@ footer h6{
         align-items: center;
     }
 
+    .descripcion{
+        display: none;
+    }
+
+    .productoshome{
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width: 769px){
+
+    
+    .barraheader{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+    .barraheader input{
+        width: 50vw;
+        margin: 10px 0 10px 0;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        align-self: center;
+        margin-bottom: 12px;
+    }
+    
+    .loginbar{
+        align-self: center;
+        margin-bottom: 5x;
+    }
+
     .hometitulos{
         display: block;
+        margin-left: 0;
     }
 
     .hometitulos a{
@@ -405,14 +454,6 @@ footer h6{
         box-shadow: none;
     }
 
-    .barraheader{
-        display: flex;
-        flex-direction: column;
-    }
-    .barraheader input{
-        width: 50vw;
-    }
-
     .intereses{
         display: flex;
         flex-direction: column;
@@ -424,7 +465,8 @@ footer h6{
     }
 
     .textofooter{
-    padding: 7px;
+        padding: 7px;
+
     }
 
     .iconfooter{
